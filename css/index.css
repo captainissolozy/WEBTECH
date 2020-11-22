@@ -1,0 +1,131 @@
+* {
+    overflow: hidden;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)), url(../images/login_bg.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+
+.big-wrap {
+    display: flex;
+    height: 100%;
+}
+
+.in {
+    position: relative;
+    flex: 3;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    max-width: 700px;
+}
+
+.bg-wrap {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .login-wrap {
+        width: 100%;
+    }
+
+    .bg-wrap {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        background-image: none;
+    }
+
+    .in {
+        background-image: none;
+    }
+}
+
+.card-sign {
+    position: relative;
+    padding: 10%;
+    margin-top: 10%;
+}
+
+.card-sign input::placeholder {
+    padding-left: 3px;
+}
+
+.card-sign input, .card-sign button {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.text-sign {
+    position: relative;
+    width: 100%;
+    margin: 10px;
+}
+
+.login-id {
+    position: relative;
+}
+
+.input-id {
+    font-size: 14px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #e7effd;
+    border: 1px solid rgba(180, 180, 180, 0.623);
+    padding: 10px 20px;
+}
+
+.passw {
+    position: relative;
+
+}
+
+.input-passw {
+    font-size: 14px;
+    position: relative;
+    background-color: #e7effd;
+    border-radius: 5px;
+    border: 1px solid rgba(180, 180, 180, 0.623);
+    padding: 10px 20px;
+}
+
+.button-g {
+    background-color: white;
+    border-radius: 5px;
+    padding: 6px 10px;
+    border: 1px solid rgba(180, 180, 180, 0.623);
+
+}
+
+.button-w {
+    order: 3;
+    position: relative;
+}
+
+.button-a {
+    background-color: #1076d0;
+    border-radius: 5px;
+    border: 1px solid rgba(180, 180, 180, 0.623);
+    color: white;
+    padding: 6px 10px;
+}
+
+.mybox {
+    order: 4;
+    position: relative;
+}

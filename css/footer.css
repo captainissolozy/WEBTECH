@@ -1,0 +1,35 @@
+.footer-na {
+  padding-top: 10px;
+  grid-area: foot;
+  position: relative;
+  width: 100%;
+  background-color: #1a70bd;
+}
+.footer-na .cardfoot-container {
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.356);
+  padding-bottom: 10px;
+  justify-content: space-between;
+  width: 80%;
+  gap: 5%;
+}
+.footer-na .cardfoot-container .cardfoot {
+  min-width: 128px;
+  overflow: hidden;
+}
+.footer-na .cardfoot-container .cardfoot .one {
+  color: #fff;
+  display: block;
+}
+.footer-na .cardfoot-container .cardfoot .one.header, .footer-na .cardfoot-container .cardfoot .onei {
+  font-size: 18px;
+  vertical-align: text-top;
+}
+
+.center-this {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=footer.css.map */

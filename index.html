@@ -1,43 +1,54 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="reset.css">
-    <title>Document</title>
-    <script>$(".myBox").click(function() {
-      window.location = $(this).find("a").attr("href"); 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Document</title>
+  <script>
+    $(".myBox").click(function () {
+      window.location = $(this).find("a").attr("href");
       return false;
-    });</script>
+    });
+  </script>
 </head>
+
 <body>
-    <div class="big-wrap">
-      <div class="bg">
-        <div class="in">
-        </div>
-      </div>
-    <div class="login-wrap">
-      <div class="login-card" style="display: flex; flex-direction: column; height: 50%; z-index: 1;">
-        <div class="card-sign" style="display: flex; flex-direction: column; position: relative; top: 5%; width: 80%; left: 10%; height: 60%; justify-content: space-around; z-index: 1;">
-        <div class="text-sign" style="position: relative; width: 100%; left: 2%; top: 2%; margin: 10px;">
-          <span style="font-size: 25px;">Sign In</span>
-        </div>
-        <div class="loginId" style="width: 100%; position: relative; order: 1; left: 2%; z-index: 2;">
-          <input type="id" placeholder="&nbsp;admin" style="width: 95%; font-size: 14px; position: relative; left: 1%; border-radius: 5px; background-color: #e7effd;border: solid rgba(180, 180, 180, 0.623); border-width: 1px; padding: 10px 20px;">
-        </div>
-        <div class="passw" style="position: relative; width: 100%; order: 2; left: 2%; bottom: 3%; z-index: 2;">
-          <input type="password" placeholder="&nbsp;password" style="width: 95%; font-size: 14px; position: relative; left: 1%; background-color: #e7effd; border-radius: 5px;border: solid rgba(180, 180, 180, 0.623); border-width: 1px; padding: 10px 20px;">
-        </div>
-        <div style="order: 3; left: 2%; position: relative; z-index: 2;">
-          <button style="background-color:#1076d0;width: 97%; border-radius: 5px; border: solid rgba(180, 180, 180, 0.623); border-width: 1px; color: white; padding: 6px 10px;">Log In</button>
-        </div>
-        <div class="myBox" style="order: 4; position: relative; left: 2%; bottom: 3%; z-index: 2;">
-          <button style="background-color: white; width: 97%; border-radius: 5px; border: solid rgba(180, 180, 180, 0.623); border-width: 1px; padding: 6px 10px; z-index: 1;"><a href="home.html" style="z-index: 2;">Log in as a Guest</a></button>
-        </div>
-      </div>
+  <div class="big-wrap">
+    <div class="bg-wrap">
+      <div style="padding-bottom: 150px;">
+        <img class="in" src="images/itonlearn.png">
       </div>
     </div>
+    <div class="login-wrap">
+        <div class="card-sign">
+          <div class="text-sign">
+            <span style="font-size: 25px;">Sign In</span>
+          </div>
+          <div class="login-id">
+            <input class="input-id" type="id" placeholder="admin">
+          </div>
+          <div class="passw">
+            <input class="input-passw" type="password" placeholder="password">
+          </div>
+          <div class="button-w">
+            <button class="button-a">Log In</button>
+          </div>
+          <div class="mybox">
+            <button class="button-g" onclick="redirect()">
+              Login as a guest
+            </button>
+          </div>
+        </div>
+    </div>
   </div>
-  <a href="home.html" style="position: relative; z-index: 5;"> CCCCCCCCCCC</a>
 </body>
+
 </html>
+<script>
+  function redirect() {
+    window.location.href = "/home.html"
+  }
+</script>
