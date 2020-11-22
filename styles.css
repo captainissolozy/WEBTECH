@@ -238,6 +238,9 @@ div::-webkit-scrollbar {
   border: solid rgba(136, 136, 136, 0.432);
   border-width: 1px;
 }
+.searchDiv{
+  width: 50%; left: 22%; position: relative; float: left; top: 3.8%;
+}
 @media screen and (max-width: 2200px){
   .course{
     width: 60%;
@@ -251,6 +254,9 @@ div::-webkit-scrollbar {
   }
   .card{
     min-width: 24.2%;
+  }
+  .searchDiv{
+    left: 12%;
   }
 }
 @media screen and (max-width: 1600px){

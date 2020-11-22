@@ -303,6 +303,8 @@
     height: 45%; 
     background-color: white; 
     float: left;
+    padding-bottom: 0%;
+    overflow: scroll;
   }
   .text{
     position: relative; width: 50%; float: left; font-size: 14px;  padding-right: 1%;
@@ -313,6 +315,7 @@
   }
   .big-wrap{
     position: relative; height: 82%; width: 100%;
+    padding-bottom: 4%;
   }
   @media screen and (max-width: 2200px){
     .big-wrap{
@@ -329,6 +332,7 @@
     .box{
       left: 12.5%;
       width: 75%;
+      overflow: auto;
     }
     .text1{
       left: 14%;
@@ -336,7 +340,7 @@
   }
   @media screen and (max-width: 1600px){
     .big-wrap{
-        height: 82%;
+        height: 60%;
     }
     .text{
       padding-left: 0%;

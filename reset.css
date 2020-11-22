@@ -10,10 +10,10 @@ body{
   position: relative; width: 100%; height: 100%; z-index: -1;
 }
 .bg{
-  position: relative; left: 3%; width: 75%; top: 12%; border-bottom: solid white; border-width: 1px; padding-bottom: 3%;
+  position: relative; left: 3%; width: 75%; top: 12%; border-bottom: solid white; border-width: 1px; padding-bottom: 3%; z-index: -1;
 }
 .in{
-  position: relative; background-image: url(itonlearn.png); background-size: cover; left: 0%; width: 70%; height: 25%; right: 25%;
+  position: relative; background-image: url(itonlearn.png); background-size: cover; left: 0%; width: 70%; height: 300px; right: 25%; z-index: -2;
 }
 .login-wrap{
   display: flex; flex-direction: column; height: 100%; width: 19%; z-index: 1; background-color: white; position: absolute; left: 81%; top: -0%;
