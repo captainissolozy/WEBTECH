@@ -204,6 +204,8 @@ p {
     border: none;
     cursor: pointer;
     transition: 0.2s;
+    height: 4.14rem; 
+    width: 6.3rem;
 }
 
 .dropbtnEn:hover {

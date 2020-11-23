@@ -23,7 +23,7 @@ body {
 }
 
 .bg-wrap {
-    flex: 3;
+    flex: 4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +74,7 @@ body {
 .text-sign {
     position: relative;
     width: 100%;
-    margin: 10px;
+    margin-bottom: 15px;
 }
 
 .login-id {
@@ -128,4 +128,16 @@ body {
 .mybox {
     order: 4;
     position: relative;
+}
+span{
+    font-size: 25px;
+}
+.box-text{
+    background-color: #f6dcdb;
+    border-radius: 5px;
+    padding: 7px;
+}
+.invalid{
+    font-size: 14px;
+    
 }

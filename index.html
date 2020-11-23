@@ -7,12 +7,6 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/index.css">
   <title>Document</title>
-  <script>
-    $(".myBox").click(function () {
-      window.location = $(this).find("a").attr("href");
-      return false;
-    });
-  </script>
 </head>
 
 <body>
@@ -24,8 +18,8 @@
     </div>
     <div class="login-wrap">
         <div class="card-sign">
-          <div class="text-sign">
-            <span style="font-size: 25px;">Sign In</span>
+          <div class="text-sign" id="log1">
+            <span>Sign In</span>
           </div>
           <div class="login-id">
             <input class="input-id" type="id" placeholder="admin">
@@ -34,7 +28,7 @@
             <input class="input-passw" type="password" placeholder="password">
           </div>
           <div class="button-w">
-            <button class="button-a">Log In</button>
+            <button class="button-a" onclick="login()">Log In</button>
           </div>
           <div class="mybox">
             <button class="button-g" onclick="redirect()">
@@ -48,7 +42,24 @@
 
 </html>
 <script>
+  var countnum = 1; 
   function redirect() {
     window.location.href = "/home.html"
+  }
+  function login(){
+    if(countnum==1){
+    var node = document.createElement("div");
+    node.classList.add('box-text')
+    node.innerHTML = '<span class="invalid">Invalid Log in please try again</span>'     
+    document.getElementById("log1").appendChild(node);
+    countnum = 2
+    }else{
+    var oldnode = document.getElementsByClassName('box-text')
+    var node = document.createElement("div");
+    node.classList.add('box-text')
+    node.innerHTML = '<span class="invalid">Invalid Log in please try again</span>'     
+    document.getElementById("log1").removeChild(oldnode, node);
+    countnum = 2
+    }
   }
 </script>
